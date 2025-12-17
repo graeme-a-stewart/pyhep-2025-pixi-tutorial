@@ -2,7 +2,7 @@
 authors = ["Graeme Andrew Stewart <graeme.andrew.stewart@desy.de>"]
 channels = ["conda-forge"]
 name = "ex2"
-platforms = ["osx-arm64", "linux-64"]
+platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
 version = "0.1.0"
 
 [tasks]
