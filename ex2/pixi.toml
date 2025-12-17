@@ -1,0 +1,25 @@
+[workspace]
+authors = ["Graeme Andrew Stewart <graeme.andrew.stewart@desy.de>"]
+channels = ["conda-forge"]
+name = "ex2"
+platforms = ["osx-arm64", "linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+awkward = ">=2.8.11,<3"
+
+[feature.lab.dependencies]
+notebook = ">=7.5.0,<8"
+jupyterlab = ">=4.5.1,<5"
+
+[feature.lab.tasks]
+lab = { cmd = "jupyter lab", description = "Launch Jupyter Lab" }
+start = [{ task = "lab" }]
+
+[environments]
+interactive = ["lab"]
+
+[pypi-dependencies]
+hist = ">=2.9.0, <3"
